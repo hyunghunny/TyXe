@@ -107,6 +107,10 @@ conda env create -f environment.yml
 conda activate tyxe
 pip install -e .
 ```
+Based on my experience using 3090 Ti GPU, pytorch is needed to upgrade as below:
+```
+conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge
+```
 
 ## Citation
 If you use TyXe, please consider citing:
